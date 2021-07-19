@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<title>Cadastrar</title>
+<link rel="icon" href="imagens/icone.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1>Novo cadastro</h1>
+	<form name="frmnovocadastro" action="insert">
+		<table>
+			<tr>
+				<td><input type="text" name="nome" placeholder="Nome" class = "Caixa1"></td>
+			</tr>
+			<tr>
+				<td><input maxlength="15" type="number" name="sus" placeholder="Número do sus" class = "Caixa2"></td>
+			</tr>
+			<tr>
+				<td><input type="text" name="tipo" placeholder="Tipo" class = "Caixa1"></td>
+				
+			</tr>
+			<tr>
+				<td><input type="date" name="data_nasc" placeholder="Data de nascimento" class = "Caixa2"></td>
+			</tr>
+			<tr>
+				<td><input type="text" name="fone" placeholder="Fone" maxlength = "11" class = "Caixa2"></td>
+			</tr>
+		</table>
+			<input type = "button" value = "Cadastrar" class="Botao1" onClick = "validar()">
+			<a href = "index.html" class = "Botao1">Cancelar</a>
+	</form>
+	<script src="scripts/validator.js"></script>
+
+</body>
+</html>
